@@ -98,8 +98,8 @@ configuration.
 
 Via RDP connection, update the OS just in case
 
-`sudo apt-get update && apt-get upgrade`
-`reboot`
+`sudo apt-get update && apt-get upgrade`  
+`sudo reboot`
 
 Connect again via RDP and install Pi-hole. The typical curl piped
 through bash as shown on the Pi-hole website may not work, so if it
@@ -109,7 +109,7 @@ doesn’t download the install script, and run it.
 
 If that bombs, just download as mentioned
 
-`wget -O basic-install.sh https://install.pi-hole.net`
+`wget -O basic-install.sh https://install.pi-hole.net`  
 `sudo bash basic-install.sh`
 
 When asked about the network interface, choose wireless, probably wlan0
@@ -128,8 +128,8 @@ easy way to add more via the Web UI later if you choose to.
 Finish the install, and note the password required for Pi-hole web site
 access. Then upgrade again and reboot again just for fun.
 
-`sudo apt-get update && apt-get upgrade`
-`reboot`
+`sudo apt-get update && apt-get upgrade`  
+`sudo reboot`
 
 Now Pi-hole is running and <span class="underline">would</span>
 intercept bad DNS requests, but none of your devices are using it. The
