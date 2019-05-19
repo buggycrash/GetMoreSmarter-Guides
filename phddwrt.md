@@ -4,7 +4,7 @@ Protecting and monitoring your home network can be a chore. However
 several modern devices take some of the pain out of the equation, if you
 are willing to spend money, and at the same time add more vendors to the
 list of ones who can track all your home internet activity. Your ISP
-(Verizon, Comcast, AT\&T etc.) monitors all your traffic though the same
+(Verizon, Comcast, AT&T etc.) monitors all your traffic though the same
 system they use to provide your Internet access. It’s very difficulty to
 prevent them from knowing: every site you visit, when, for how long, and
 from what device. You might subscribe to a VPN, but unless you built the
@@ -166,7 +166,7 @@ above.
 To enable that setting, follow the guide here
 <https://docs.pi-hole.net/ftldns/blockingmode/#pi-holes-ip-ipv6-nodata-blocking>
 which is a little confusing. Basically edit
-/etc/Pi-hole/Pi-hole-FTL.conf and add BLOCKINGMODE=IP-NODATA-AAAA
+`/etc/Pi-hole/Pi-hole-FTL.conf`and add `BLOCKINGMODE=IP-NODATA-AAAA`
 
 That same page shows several other modes you may want instead. Try them
 out until you find the right one for your situation. Other settings may
