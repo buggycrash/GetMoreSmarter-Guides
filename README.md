@@ -1,0 +1,2 @@
+# guides
+Documentation for GetMoreSmarter
