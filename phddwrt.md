@@ -68,9 +68,9 @@ to make to achieve similar on your network.
 4.  Configure DD-WRT to point clients to Pi-hole for DNS
 
 There are some fairly nice high level guides here that will walk through
-most of steps 1 and 2.
+most of steps 1 and 2.  
 <https://opensource.com/article/18/2/block-ads-raspberry-pi>  
-<https://www.smarthomebeginner.com/pi-hole-tutorial-whole-home-ad-blocking/>
+<https://www.smarthomebeginner.com/pi-hole-tutorial-whole-home-ad-blocking/>  
 
 I’ll point out a few things that you need to adjust or consider. First,
 maybe go wireless and headless on the Raspberry Pi by installing xRDP.
@@ -78,13 +78,13 @@ With this setup you can hide the Pi device anywhere convenient and still
 access using your favorite RDP client from Windows, MacOS, Linux, iPad
 etc. To install xRDP type
 
-> sudo apt-get install xrdp
+`sudo apt-get install xrdp`
 
 That’s it. Done. You can now remote into the Pi over the net. In my
 case, I had never accessed the Pi remotely, so I had to set the password
 for the default “pi” user.
 
-> sudo passwd pi
+`sudo passwd pi`
 
 Type the password twice. I don’t know if the password expires. If so
 I’ll have to connect via console later to reset. You could use “chage”
@@ -98,21 +98,19 @@ configuration.
 
 Via RDP connection, update the OS just in case
 
-> sudo apt-get update && apt-get upgrade
-> 
-> reboot
+`sudo apt-get update && apt-get upgrade`
+`reboot`
 
 Connect again via RDP and install Pi-hole. The typical curl piped
 through bash as shown on the Pi-hole website may not work, so if it
 doesn’t download the install script, and run it.
 
-> curl -sSL https://install.pi-hole.net | bash
+`curl -sSL https://install.pi-hole.net | bash`
 
 If that bombs, just download as mentioned
 
-> wget -O basic-install.sh https://install.pi-hole.net
-> 
-> sudo bash basic-install.sh
+`wget -O basic-install.sh https://install.pi-hole.net`
+`sudo bash basic-install.sh`
 
 When asked about the network interface, choose wireless, probably wlan0
 and when asked about the IP, leave it as whatever exists. Later we will
@@ -130,9 +128,8 @@ easy way to add more via the Web UI later if you choose to.
 Finish the install, and note the password required for Pi-hole web site
 access. Then upgrade again and reboot again just for fun.
 
-> sudo apt-get update && apt-get upgrade
-> 
-> reboot
+`sudo apt-get update && apt-get upgrade`
+`reboot`
 
 Now Pi-hole is running and <span class="underline">would</span>
 intercept bad DNS requests, but none of your devices are using it. The
@@ -184,11 +181,11 @@ I’ll detail how to set it on DD-WRT.
 In DD-WRT, make sure you have enabled the use of dnsmasq, and in the
 Services\>services\>Additional DNSMasq Options:
 
-> dhcp-option=6,192.168.1.250
+`dhcp-option=6,192.168.1.250`
 
 Change 192.168.1.250 to the IP of your Pi-hole device. Save and Apply.
 Wait for the router to reboot. Log back into DD-WRT and set the MAC
-address of your Pi-hole to attain a static IP following this guide
+address of your Pi-hole to attain a static IP following this guide  
 <https://wiki.dd-wrt.com/wiki/index.php/Static_DHCP>
 
 Now it’s all set up\! You can monitor all traffic on your WiFi network,
