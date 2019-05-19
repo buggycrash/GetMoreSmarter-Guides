@@ -166,7 +166,7 @@ above.
 To enable that setting, follow the guide here
 <https://docs.pi-hole.net/ftldns/blockingmode/#pi-holes-ip-ipv6-nodata-blocking>
 which is a little confusing. Basically edit
-`/etc/Pi-hole/Pi-hole-FTL.conf`and add `BLOCKINGMODE=IP-NODATA-AAAA`
+`/etc/Pi-hole/Pi-hole-FTL.conf` and add `BLOCKINGMODE=IP-NODATA-AAAA`
 
 That same page shows several other modes you may want instead. Try them
 out until you find the right one for your situation. Other settings may
