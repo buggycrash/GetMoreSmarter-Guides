@@ -4,8 +4,8 @@ Protecting and monitoring your home network can be a chore. However
 several modern devices take some of the pain out of the equation, if you
 are willing to spend money, and at the same time add more vendors to the
 list of ones who can track all your home internet activity. Your ISP
-(Verizon, Comcast, AT&T etc.) monitors all your traffic though the same
-system they use to provide your Internet access. It’s very difficulty to
+(Verizon, Comcast, AT&T etc.) monitors all your traffic through the same
+system they use to provide your Internet access. It’s very difficult to
 prevent them from knowing: every site you visit, when, for how long, and
 from what device. You might subscribe to a VPN, but unless you built the
 VPN, then the VPN service has all the information you used to provide to
@@ -59,7 +59,7 @@ to make to achieve similar on your network.
 
 ## Step-by-step
 
-1.  Build your RaspberryPi
+1.  Build your Raspberry Pi
 
 2.  Install Pi-hole
 
