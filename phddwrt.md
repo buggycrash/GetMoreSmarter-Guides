@@ -141,7 +141,7 @@ DNS. Doing so is beyond this guide, but just Google “static DNS” and
 
 With that one host configured to use Pi-hole for DNS, visit some
 websites that exist, and some that don’t like
-<http://badsite.cn.ru.techy> then login to the <http://pi.hole/admin>
+<https://badsite.cn.ru.techy> then login to the `pi.hole/admin` on your local network
 and look at the traffic using the Query log menu item. You should see
 something like this
 
